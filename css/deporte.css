@@ -1,0 +1,409 @@
+/*
+#FFFFFF BLANCO
+#0b3142 AZUL
+#019eb7 CELESTE
+#348357 VERDE OSCURO
+#4C956C VERDE MAS CLARO
+*/
+
+body{    
+    font-family: 'Times New Roman', Times, serif !important;
+    background-color:#348357 !important;
+    color: white !important;
+}
+header{
+    display: flex !important;
+}
+header img{
+    width: 80% !important;
+    height: 50% !important;
+}
+footer img{
+    position: relative !important;
+}
+#banner{
+    margin-left: -20% !important;
+    width: 120% !important;
+    height: 50% !important;
+}
+nav{
+    display: flex !important;
+    background-color: #019eb7 !important;
+    width: 100% !important;
+    margin-top: -17% !important;
+}
+nav a{
+    text-decoration: none !important;
+    padding: 10px !important;
+    font-size: 40px !important;
+    color: black !important;
+}
+nav a:hover{
+    background-color: aquamarine !important;
+}
+main{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1%;   
+}
+marquee{
+    background-color: #0b3142 !important;
+}
+aside a{
+    font-size: 30px !important;
+    color: blue !important;
+}
+aside h2{
+    font-size: 30px !important;
+    background-color: #019eb7 !important;
+    width: 100% !important;
+    color: black !important;
+}
+aside p{
+    font-size: 24px !important;
+}
+article{  
+    margin-top: 1%;
+    margin-left: 0.5% !important; 
+    width: 100% !important; 
+}
+article p{
+    font-size: 24px !important;
+}
+article h1{
+    font-size: 40px !important;
+    background-color: #019eb7 !important;
+    width: 100% !important;
+    color: black !important;
+}
+footer{
+    border-color: black !important;
+    border-style: solid !important;
+    border-width: 5px !important;
+    border-top: transparent !important;
+    background-color: #019eb7 !important;
+    width: 70% !important;
+    margin-left: 15% !important;
+    margin-bottom: 1% !important;
+}
+#depExtremos{
+    width: 20% !important;
+    position: absolute !important;
+    margin-left: 1% !important;
+    border-color: black !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    background-color: cadetblue !important;
+    color: white !important;
+}
+#depIndoor{
+    width: 20% !important;
+    position: absolute !important;
+    margin-left: 48% !important;
+    border-color: black !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    background-color: cadetblue !important;
+    color: white !important;
+}
+#depOutdoor{
+    width: 20% !important;
+    position: absolute !important;
+    margin-left: 24.5% !important;
+    border-color: black !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    background-color: cadetblue !important;
+    color: white !important;
+}
+h2{
+    background-color: #019eb7 !important;
+    color: black !important;
+    border-color: black !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+
+}
+#pIni{
+    background-color: cadetblue !important;    
+    color: white !important;
+    width: 96.5%;
+    margin-left: 1.5%;
+    border-color: black !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+}
+#pfin{
+    background-color: cadetblue !important;    
+    color: white !important;
+    width: 96.5%;
+    margin-left: 1.5%;
+    border-color: black !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+}
+#recomendados{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    border-color: black !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+}
+#Frecuente1{
+    position: absolute;
+    width: 21%;
+}
+#Frecuente2{
+    position: absolute;
+    width: 21%;
+    margin-left: 24%;
+}
+#Frecuente3{
+    position: absolute;
+    width: 21%;
+    margin-left: 48%;
+}
+h3{
+    background-color: #019eb7 ;
+    border-color: black !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    color: black;
+}
+#Tienda{
+    display: flex;
+    background-color: cadetblue;
+    width: 98%;
+    margin-left: 0.5%;
+}
+.tienda{
+    margin: 2.5%;
+}
+.TT{
+    background-color: gold;
+    font-weight: bold;
+    width: 95%;
+}
+.ref{
+    color: blue;
+    font-weight: bold;
+}
+.ref:hover{
+    color: darkblue;
+}
+.color{
+    background-color: gold; 
+}
+/*Media Queries*/
+@media screen and (max-width:1897px){
+    .RESPONS{
+        width: 100% !important;
+    }
+    #depExtremos{
+        position: relative !important;
+        margin-left: 4% !important;
+        width: 90% !important;
+    }
+    #depIndoor{
+        position: relative !important;
+        margin-left: 4% !important;
+        width: 90% !important;
+    }
+    #depOutdoor{
+        position: relative !important;
+        margin-left: 4% !important;
+        width: 90% !important;
+    }
+    #pfin{
+        margin-top: -25%;
+        margin-left: 4% !important;
+        width: 90% !important;
+    }
+    #Frecuente1{
+        position: relative !important;
+        margin-left: 4% !important;
+        width: 90% !important;
+    }
+    #Frecuente2{
+        position: relative !important;
+        margin-left: 4% !important;
+        width: 90% !important;
+    }
+    #Frecuente3{
+        position: relative !important;
+        margin-left: 4% !important;
+        width: 90% !important;
+    }
+    .ifrmRes{
+        width: 100%;
+    }
+    #tiendaSaludo{
+        margin-top: -38% !important;
+    }
+    #Tienda{
+        display: inline-block;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .color{
+        width: 50%;
+        margin-left: 25%;
+        font-display: center;
+    }
+    .imgRE{
+        margin-left: 25%;
+        width: 50%;
+    }
+    #recomendados{
+        margin-left: 4% !important;
+    }
+    #pIni{
+        width: 90% !important;
+        margin-left: 4%;
+    }
+    #DEPMOST{
+        width: 100% !important;
+        margin-left: -0.5% !important;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:1578px){
+    #tiendaSaludo{
+        margin-top: -45% !important;
+    }
+}
+@media screen and (max-width:1340px){
+    #tiendaSaludo{
+        margin-top: -55% !important;
+    }
+}
+@media screen and (max-width:1024px){
+    .RESPONS{
+        width: 100%;
+    }
+    #pfin{
+        margin-top: -45%;
+        margin-left: -0.5% !important;
+        width: 100% !important;
+    }
+    #tiendaSaludo{
+        margin-top: -70% !important;
+    }
+    #Tienda{
+        display: inline-block;
+        width: 80%;
+        margin-left: 10%;
+    }
+    #pIni{
+        width: 100% !important;
+        margin-left: -0.5%;
+        margin-top: -0.9%;
+    }
+    #depExtremos{
+        width: 100% !important;
+        margin-left: -0.5% !important;
+        margin-top: -2%;
+    }
+    #depIndoor{
+        width: 100% !important;
+        margin-left: -0.5% !important;
+        margin-top: -2%;
+    }
+    #depOutdoor{
+        width: 100% !important;
+        margin-left: -0.5% !important;
+        margin-top: -2%;
+    }
+}
+@media screen and (max-width:767px){
+    nav{
+        display: block !important;        
+    }
+    nav a{
+        font-size: 26px !important;
+    }
+    #pfin{
+        margin-top: -60%;
+        margin-left: -0.5% !important;
+        width: 100% !important;
+    }
+    #tiendaSaludo{
+        margin-top: -95% !important;
+    }
+    #Tienda{
+        display: inline-block;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .color{
+        width: 100%;
+        margin-left: 0%;
+        font-display: center;
+    }
+}
+@media screen and (max-width:610px){
+    #tiendaSaludo{
+        margin-top: -120% !important;
+    }
+}
+@media screen and (max-width:480px){
+    #pfin{
+        margin-top: -100%;
+        margin-left: -0.5% !important;
+        width: 100% !important;
+    }
+    #tiendaSaludo{
+        margin-top: -155% !important;
+    }
+    #Tienda{
+        display: inline-block;
+        width: 100%;
+        margin-left: -0.5%;
+    }
+    #DEPMOST{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:380px){
+    #tiendaSaludo{
+        margin-top: -195% !important;
+    }
+}
+@media screen and (max-width:320px){
+    #pIni{
+    font-size: 19px !important;
+    }
+    h2{
+        font-size: 25px !important;
+    }
+    h3{
+        font-size: 25px !important;
+    }
+    .parrRes{
+        font-size: 18px !important;
+    }
+    #pfin{
+        margin-top: -155%;
+        margin-left: -0.5% !important;
+        width: 100% !important;
+    }
+    #tiendaSaludo{
+        margin-top: -235% !important;
+        font-size: 20px !important;
+    }
+    #tiendaDespedida{
+        font-size: 20px !important;
+    }
+    #Tienda{
+        display: inline-block;
+        width: 100%;
+        margin-left: -0.5%;
+    }
+}

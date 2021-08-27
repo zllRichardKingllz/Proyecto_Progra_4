@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurningSportS/Salud</title>
+    <link rel="stylesheet" type="text/css" href="css/visitanos.css">
+    <link rel="icon" type="image" href="img/logoPrincipal.png">    
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhO49nCKvG-2pmPRw9EqtNo4ibrDGToMk&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>   
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>         
+    
+    <div id="mapa"></div>
+    <script type="text/javascript">
+
+      var divMapa = document.getElementById('mapa');
+      navigator.geolocation.getCurrentPosition( initMap, fn_mal);
+      function fn_mal(){
+        alert("No se pudo capturar la ubicación del usuario");
+      }
+      function initMap( position ){
+          var lat = position.coords.latitude;
+          var lon = position.coords.longitude;
+
+          var glatLon= new google.maps.LatLng( lat, lon );
+          var glatLon2= new google.maps.LatLng( '10.071253', '-84.241054' );
+          var objConfig = {
+            zoom: 10,
+            center: glatLon
+          }
+          var gMapa = new google.maps.Map( divMapa, objConfig );
+          var objConfigMarker = {
+            position: glatLon,
+            map: gMapa ,
+            title: "Usted está acá"
+          }
+          var config = {                  
+                  position: glatLon2,
+                  map: gMapa ,
+                  title: "BurningSportS"
+                }
+          var gMarker = new google.maps.Marker( objConfigMarker );
+          gMarker.setIcon('img/marcaCliente 40x40.jpg');
+          var gMarkerDV = new google.maps.Marker( config );
+          gMarkerDV.setIcon('img/logoPrincipal 40x40.png');
+          
+          var objHTML = {
+                   content: '<div style="height: 150px; width:300px"><h2>BurningSportS</h2><h3>Su tienda por excelencia</h3></div>'
+                 }
+                 var gIW = new google.maps.InfoWindow( objHTML );
+
+                 google.maps.event.addListener( gMarkerDV, 'click', function(){
+                   gIW.open( gMapa, gMarkerDV );
+                 });  
+                 var objConfigDR = {
+                   map: gMapa,
+                   suppressMarkers: true
+                 }
+                 var objConfigDS = {
+                   origin: glatLon,
+                   destination: glatLon2,
+                   travelMode: google.maps.TravelMode.DRIVING
+                 }
+            var ds = new google.maps.DirectionsService();
+            //coordenadas
+            var dr = new google.maps.DirectionsRenderer( objConfigDR );
+            //Traduce coords a la ruta
+
+                ds.route( objConfigDS, fnRutear );
+                function fnRutear( resultados, status ){
+                  //mostrar linea A y B
+                  if( status == 'OK'){
+                    dr.setDirections(resultados);
+                  }else{
+                    alert('Error '+ status);
+                  }
+                }
+      }
+    </script>
+  </head>
+  <body>    
+    <main>
+      <header>
+        <div id="contLogo">
+          <img src="img/logoPrincipal.png" alt="Logo BurningSportS">
+      </div>
+      <div id="contBanner">
+          <img src="img/Banner.png" alt="banner BurningSportS" id="banner">    
+      </div>      
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html">Galería</a>
+        <a href="salud.html">Salud</a>
+        <a href="Deporte.html">Deportes</a>        
+        <a href="acercade.html">Acerca de nosotros</a>        
+    </nav>   
+        <article>            
+            <table class="scroll">
+              <caption id="CAPTION">Guia cliente</caption>
+              <thead>
+
+              </thead>
+
+              <tbody>
+                  <tr>                        
+                      <td class="tdCentrado">
+                          <img class="imgTabla" src="img/marcaCliente.jpg" alt="photo" />
+                      </td>
+                      <td>
+                          <p class="par">Usuario</p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="tdCentrado">
+                          <img class="imgTabla" src="img/logoPrincipal 40x40.png" alt="photo" />
+                      </td>
+                      <td>
+                          <p class="par">Empresa</p>
+                      </td>
+                  </tr>                  
+              </tbody>
+              <tfoot>
+                  <td class="dere">&copy;DerechosReservados</td>
+              </tfoot>
+          </table>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </article>
+    </main>
+    <footer>
+        <center>
+            <br>
+            <img src="img/logoPrincipal.png" alt="logo BurningSportS" width="100" height="100">
+            <br>
+            &copy; BurningSportS <br> Derechos Reservados
+        </center>
+</footer>
+  </body>
+</html>

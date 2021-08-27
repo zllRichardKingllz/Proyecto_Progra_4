@@ -1,0 +1,236 @@
+/*
+#FFFFFF BLANCO
+#0b3142 AZUL
+#019eb7 CELESTE
+#348357 VERDE OSCURO
+#4C956C VERDE MAS CLARO
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:#0b3142;
+    color: white;
+}
+header{
+    display: flex;
+}
+header img{
+    width: 80%;
+    height: 50%;
+}
+footer img{
+    position: relative;
+}
+#banner{
+    margin-left: -20%;
+    width: 120%;
+    height: 50%;
+}
+nav{
+    display: flex;
+    background-color: #019eb7;
+    width: 100%;
+    margin-top: -17%;
+}
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 40px;
+    color: black;
+}
+nav a:hover{
+    background-color: aquamarine;
+}
+main{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1%;   
+}
+aside{
+    background-color: #019eb7;
+    float: right;
+    margin-top: 16.9%;
+    width: 25%;
+}
+marquee{
+    background-color: #0b3142;
+}
+.posTxt{
+    width: 40%;
+    margin: 1% 0px;
+}
+.posRad{
+    margin-left: 4%;
+}
+.detEnfer{
+    margin-left: 18.15%;
+}
+.detE{
+    margin-top: 1%;
+}
+.disNone{
+    display: none;
+}
+aside p{
+    font-size: 24px;
+}
+article{
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 25%; 
+    width: 50%; 
+}
+article p{
+    font-size: 24px;
+}
+article h1{
+    font-size: 40px;
+    background-color: #019eb7;    
+    width: 100%;
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+}
+#contHOM{ 
+    display: inline;  
+}
+#contMUJ{  
+    display: inline;  
+}
+#contOTR{ 
+    display: inline;  
+}
+form{
+    padding: 10px;
+}
+footer{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    border-top: transparent;
+    background-color: #019eb7;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 1%;
+}
+button{
+    margin: 15px 0px 0px 0px;
+    font-size: 40px;
+    width: 100%;
+}
+input{
+    margin: 5px 0px;
+}
+/*Media Queries*/
+@media screen and (max-width:1264px){
+    nav{
+        display: block;        
+    }
+    nav a{
+        font-size: 34px;
+    }
+    article{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #nom{
+        width: 60%;
+    }
+    #ape{
+        width: 60%;
+    }
+    #ema{
+        width:  60%;
+    }
+    #edad{
+        width:  60%;
+    }
+    #alt{
+        width: 60%;
+    }
+    #pes{
+        width: 60%;
+    }
+    #detEnfermedad{
+        width: 60%;
+    }
+}
+@media screen and (max-width:1024px){
+    article{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #nom{
+        width: 100%;
+    }
+    #ape{
+        width: 100%;
+    }
+    #ema{
+        width: 100%;
+    }
+    #edad{
+        width: 100%;
+    }
+    #alt{
+        width: 100%;
+    }
+    #pes{
+        width: 100%;
+    }
+    #detEnfermedad{
+        width: 100%;
+    }
+}
+@media screen and (max-width:767px){
+    nav a{
+        font-size: 26px;
+    }
+    #Check{
+        display: block;
+        width: 100%;
+    }
+    label{
+        font-size: 26px;
+    }
+    #contHOM{ 
+        display: block;  
+        margin-left: -5%;
+    }
+    #contMUJ{
+        display: block; 
+        margin-left: -5%; 
+    }
+    #contOTR{  
+        display: block;
+        margin-left: -5%;  
+    }
+}
+@media screen and (max-width:480px){
+    #TFM{
+        font-size: 28px;
+    }
+    #TFM2{
+        font-size: 20px;
+    }
+    article{
+        width: 90%;
+        margin-left: 5%;
+    }
+    label{
+        font-size: 24px;
+    }    
+}
+@media screen and (max-width:320px){
+    article{
+        width: 98%;
+        margin-left: 0%;
+    }
+}

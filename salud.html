@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurningSportS/Salud</title>
+    <link rel="stylesheet" type="text/css" href="css/salud.css">
+    <script src="js/jquery-3.2.1.js" type="text/javascript"> </script>
+    <link rel="icon" type="image" href="img/logoPrincipal.png">
+    <script>
+        $(document).ready(function () {
+            
+
+            $("#btn123").click(function () {
+                $("#sa").fadeOut(3000);
+            });
+            $("#btn123").dblclick(function () {
+                $("#sa").slideDown(5000);
+
+            });
+
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+           
+            $(window).scroll(function() {
+                if($(this).scrollTop()>80){
+                    $("#containerBelleza").show(500);
+                    $("#containerPeso").show(500);
+                    $("#containerFormulario").show(500);
+                    $("#pop").show(500);
+                }else{
+                    $("#containerBelleza").hide();
+                    $("#containerPeso").hide();
+                    $("#containerFormulario").hide();
+                    $("#pop").hide();
+                }
+            })
+           
+        });
+    </script>
+</head>
+<body>    
+    <main>  
+        <header>
+            <div id="contLogo">
+                <img src="img/logoPrincipal.png" alt="Logo BurningSportS">
+            </div>
+            <div id="contBanner">
+                <img src="img/Banner.png" alt="banner BurningSportS" id="banner">    
+            </div>       
+        </header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="salud.html">Salud</a>
+            <a href="Deporte.html">Deportes</a>        
+            <a href="visitanos.html">Visítanos</a> 
+            <a href="acercade.html">Acerca de nosotros</a>               
+        </nav>           
+        <article>            
+            <h1>Salud</h1>  
+            <img src="img/menteFuerte.jpg" alt="" width="30%" height="30%" id="imgSalud">
+            <div>
+                <h2>¿Que es la salud?</h2>
+            <p class="contraer" id="pINI"> La salud es la condición de todo ser vivo que goza de un absoluto bienestar tanto a nivel
+                físico como a nivel mental y social. Es decir, el concepto de salud no sólo da cuenta de la 
+               no aparición de enfermedades o afecciones sino que va más allá de eso. <br>
+               En grandes rasgos, la salud puede reconocerse y analizarse desde dos perspectivas: 
+               la de la salud física y la de la salud mental, aunque en realidad se trata de dos aspectos
+                relacionados entre sí.</p>
+            </div>
+             <div id="SALUDFM">
+                <div id="salFisica">
+                    <h2>Salud fisica</h2>                 
+                    <p id="pSF">
+                        La salud física es un estado de bienestar donde tu cuerpo funciona de manera óptima. Es la ausencia de enfermedades en tu cuerpo y 
+                        el buen funcionamiento fisiológico de nuestro organismo.
+                        Para mantener la salud física en óptimas condiciones, se recomienda
+                       realizar ejercicios de forma periódica y tener una dieta equilibrada y saludable, 
+                      con variedad de nutrientes y proteínas.
+                    </p>
+                 </div>
+                 <div id="salMental">
+                    <h2>Salud Mental</h2>
+                    <p id="pSM">
+                       La salud mental, por su parte, apunta a aglutinar todos los factores emocionales y 
+                       psicológicos que pueden condicionar a todo ser humano y obligarlo a emplear sus aptitudes
+                        cognitivas y su sensibilidad para desenvolverse dentro de una comunidad y resolver las 
+                       eventuales demandas surgidas en el marco de la vida cotidiana.           
+                    </p>
+                 </div>
+             </div>
+             <img src="img/saludable.jpg" alt="" width="30%" height="40%" id="imgSaludable">
+            <div id="containerSaludable">
+                <h2>¿Es lo mismo estar saludable?</h2>
+                <p>
+                    Específicamente no es lo mismo, pero tienen una gran parte en común, ya que el estar saludable
+                    abarca nuestra parte fisica, a como fue explicado con anterioridad, entonces, ¿Como podemos estar saludables?.                     
+                </p>
+            </div>
+            <div id="containerLIConsejos">
+                <ol type="i" id="listaConsejos">
+                    <li>
+                        <h3>Cuide su alimentación</h3>   
+                        <p id="tip1">
+                            Mantener una buena hidratación y llevar una dieta sana, variada y equilibrada le ayudará
+                            a mantener un peso saludable y a reducir el riesgo de enfermedades.
+
+                            Elija alimentos bajos en grasas azucares y sal. Limite el consumo de bebidas excitantes y 
+                            azucaradas (café, bebidas de cola, té).
+                        </p>                     
+                    </li>
+                    <li>
+                        <h3>Ejercite su mente</h3>
+                        <p id="tip2">Los pasatiempos, los juegos de mesa, participar en grupos de discusión, foros, conversaciones amigables, tertulias, leer, aprender 
+                            nuevas habilidades, etc. le ayudarán a mantener su cerebro activo.</p>
+                    </li>
+                    <li>
+                        <h3>Evite tomar tóxicos</h3>
+                        <p id="tip3">
+                            El consumo de tabaco, alcohol y otras drogas como el cannabis, cocaína, éxtasis, heroína, ketamina, etc., 
+                            puede generar graves problemas de salud.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Disfrute de su sexualidad</h3>
+                        <p id="tip4">
+                            De una manera sana, responsable, libre y placentera. Una sexualidad saludable le permitirá llevar una vida más plena.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Realice actividad fisica</h3>
+                        <p id="tip5">
+                            La actividad física regular ayuda a mejorar la salud y la sensación de bienestar. Haga aquello que más le entretenga,
+                             como caminar, bailar, montar en bicicleta o un deporte de equipo. Ejercicios como el Tai Chi, yoga, pilates, etc.
+                              también le ayudarán a sentirse mejor. Su salud, condición física y autoestima mejorarán.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Duerma bien</h3>
+                        <p id="tip6">
+                            Es importante dormir lo suficiente para sentirse en condiciones apropiadas para llevar a cabo las actividades cotidianas.
+                             El cansancio afecta a la concentración, desmotiva y resta energía. Intente adoptar un horario regular en su vida diaria.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <h2 id="depRe">¿El deporte tiene relevancia con ella?</h2>
+            <p id="depP">A como ya debieron de haberlo notado, totalmente. Ahora bien ¿Que deportes practicar? ¿Cuales existen? ¿Extremos?
+                no esperes más, <a href="Deporte.html" class="enlaces">vamos a averiguarlo.</a>
+            </p>
+            </div>            
+        </article>
+        <div id="containerFULL">
+            <div id="subFull">
+                <div id="containerBelleza">
+                    <h2 class="h2s">Salud, belleza y deporte, ¿Congenian?</h2>
+                    <p>Por no decir que son uno mismo, si una persona se encuentra saludable, bajo todos los pilares expuestos
+                        , y además de esto, se mantiene en un excelente estado fisico, la belleza estética vendrá sola. Bastaría
+                    con mantener el mismo estilo de vida, con el cual se ha venido trabajando. 
+                    Además, si nos mantenemos en este rumbo, también tendremos una vida muy longeva, y de adultos mayores estaremos
+                    muy agusto con nuestro físico.
+                    </p>
+                </div>
+                <div id="containerPeso">
+                    <h2 class="h2s">Bajar de peso</h2>
+                    <p>¿Te cuesta adelgazar o quieres hacerlo más rápido? <br> Has venido al lugar adecuado. Prepárate para perder peso sin pasar hambre.
+        
+                        La cruda realidad es que las ideas tradicionales del come menos, corre más no funcionan a largo plazo. ¿Contar calorías, hacer ejercicio varias horas al día e 
+                        ignorar el hambre? Eso es sufrir innecesariamente, desperdiciar el tiempo y tu valiosa fuerza de voluntad: es adelgazar para masoquistas.
+        
+                        ¿La conclusión? Las calorías no son lo único que cuenta al adelgazar. El peso también está regulado de forma hormonal. Si reduces la hormona 
+                        que almacena la grasa, la insulina, probablemente perderás el peso que te sobra de manera más fácil.</p>
+                        <h3>Acá te dejamos un poco más de información</h3>
+                        <a href="pdf/34789_Adelgaza_Para_Siempre.pdf" download="Adelgaza para siempre" target="_blank" class="enlaces">Descargar "Adelgaza para siempre.pdf"</a> <br>
+                        <a href="pdf/primeras-paginas-primeras-paginas-entrena-tu-cerebro-para-adelgazar-es.pdf" download="Entrena tu cerebro" target="_blank" class="enlaces">Descargar "Entrena tu cerebro".pdf</a>
+                        <h3>Algunos tips</h3>
+                        <ul>
+                            <li>Reducir la ingesta de azúcares y almidones (carbohidratos)</li>
+                            <li>Consuma proteínas, grasas y verduras</li>
+                            <li>Levante pesas 3 veces por semana</li>
+                        </ul>                
+                        <p style="font-weight: bold;">¿Te interesan más tips? No dudes, ingresá y llená nuestro formulario</p>
+                </div>    
+                <div id="containerFormulario">
+                    <h2 class="h2s">FORMULARIO</h2>
+                            <div>
+                                <p id="sa">Si deseas que te enviemos al correo mucha más información, desde rutinas, planes de comidas y demás, totalmente personalizados
+                                    y adaptados a ti, por favor llena este formulario.
+                                </p>
+                                <button type="button" id="btnForm"><a href="formulario.html">Llenar formulario</a></button>            
+                            </div> 
+                </div> 
+            </div>
+        </div>   
+        <!-- <img src="img/camp-nou.jpg" alt="" width="60%" height="60%" id="pop"> -->
+    </main>
+    <footer>
+        <center>
+            <br>
+            <img src="img/logoPrincipal.png" alt="logo BurningSportS" width="100" height="100">
+            <br>
+            &copy; BurningSportS <br> Derechos Reservados
+        </center>
+</footer>
+</body>
+</html>

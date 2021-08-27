@@ -1,0 +1,505 @@
+/*
+#FFFFFF BLANCO
+#0b3142 AZUL
+#019eb7 CELESTE
+#348357 VERDE OSCURO
+#4C956C VERDE MAS CLARO
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:#0b3142;
+    color: white;
+}
+header{
+    display: flex;
+}
+header img{
+    width: 80%;
+    height: 50%;
+}
+#banner{
+    margin-left: -20%;
+    width: 120%;
+    height: 50%;
+}
+nav{
+    display: flex;
+    background-color: #019eb7;
+    width: 100%;
+    margin-top: -17%;
+}
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 40px;
+    color: black;
+}
+nav a:hover{
+    background-color: aquamarine;
+}
+main{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1%;   
+}
+aside{
+    background-color: #019eb7;
+    float: right;
+    width: 26%;
+}
+marquee{
+    background-color: #0b3142;
+}
+aside a{
+    font-size: 24px;
+    color: blue;
+}
+aside a:hover{
+    color: cyan;
+}
+aside h2{
+    font-size: 36px;
+    background-color: #019eb7;
+    width: 100%;
+    color: black;
+}
+h3{
+    font-size: 24px;
+    background-color: #019eb7;
+    width: 100%;
+    color: black;
+}
+aside p{
+    font-size: 24px;
+}
+article{  
+    width: 50%; 
+    margin-left: 0.2%;
+    margin-top: 1%;
+}
+article p{
+    font-size: 25px;
+}
+article h1{
+    font-size: 40px;
+    background-color: #019eb7;
+    width: 100%;
+    color: black;
+}
+#audio{
+    background-color: #019eb7;
+    color: black;
+}
+footer img{
+    position: relative;
+}
+footer{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    border-top: transparent;
+    background-color: #019eb7;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 1%;
+}
+
+/*Media Queries*/
+@media screen and (max-width:1822px){
+    nav{
+        display: block;
+    }
+    aside h2{
+        font-size: 26px;
+    }
+    article{
+        width: 65%;
+    }
+    iframe{
+        width: 73%;
+    }
+    aside p{
+        font-size: 20px;
+    }
+    li img{
+        height: 130px;
+    }
+}
+@media screen and (max-width:1858px){
+    nav{
+        display: block;
+    }
+    aside h2{
+        font-size: 26px;
+    }
+    article{
+        width: 65%;
+    }
+    iframe{
+        width: 73%;
+    }
+    aside p{
+        font-size: 20px;
+    }
+    li img{
+        height: 120px;
+    }
+}
+@media screen and (max-width:1796px){
+    nav{
+        display: block;
+    }
+    aside h2{
+        font-size: 26px;
+    }
+    article{
+        width: 65%;
+    }
+    iframe{
+        width: 73%;
+    }
+    aside p{
+        font-size: 20px;
+    }
+    li img{
+        height: 125px;
+    }
+}
+@media screen and (max-width:1650px){
+    nav{
+        display: block;
+    }
+    aside h2{
+        font-size: 26px;
+    }
+    article{
+        width: 65%;
+    }
+    iframe{
+        width: 73%;
+    }
+    aside p{
+        font-size: 20px;
+    }
+    li img{
+        height: 140px;
+    }
+}
+@media screen and (max-width:1210px){
+    nav{
+        display: block;
+    }
+    aside h2{
+        font-size: 26px;
+    }
+    article{
+        width: 65%;
+    }
+    iframe{
+        width: 73%;
+    }
+}
+@media screen and (max-width:1024px){
+    nav{
+        display: block;
+    }
+    aside h2{
+        font-size: 23px;
+    }
+    aside h3{
+        font-size: 20px;
+    }
+    article{
+        width: 65%;
+    }
+    iframe{
+        width: 100%;
+    }
+    li img{
+        height: 158px;
+    }
+}
+@media screen and (max-width:767px){
+    nav a{
+        font-size: 24px;
+    }
+    article{
+        width: 100%;
+    }
+    article h1{
+        font-size: 30px;
+    }
+    article p{
+        font-size: 21px;
+    }
+    aside{
+        position: absolute;
+        margin-top: 150%;
+        width: 70%;
+    }
+    aside h2{
+        font-size: 20px;
+    }
+    aside h3{
+        font-size: 18px;
+    }
+    aside p{
+        font-size: 16px;
+    }
+    main{
+        padding-bottom: 170%;
+    }
+    li img{
+        height: 200px;
+    }
+}
+@media screen and (max-width:745px){
+    aside{
+        position: absolute;
+        margin-top: 160%;
+        width: 70%;
+    }
+    aside p{
+        font-size: 18px;
+    }
+    main{
+        padding-bottom: 180%;
+    }
+}
+@media screen and (max-width:715px){
+    aside{
+        position: absolute;
+        margin-top: 170%;
+        width: 70%;
+    }
+    aside p{
+        font-size: 18px;
+    }
+    main{
+        padding-bottom: 190%;
+    }
+}
+@media screen and (max-width:691px){
+    aside{
+        position: absolute;
+        margin-top: 175%;
+        width: 70%;
+    }
+    aside p{
+        font-size: 18px;
+    }
+    main{
+        padding-bottom: 195%;
+    }
+}
+@media screen and (max-width:680px){
+    nav a{
+        font-size: 24px;
+    }
+    li img{
+        height: 140px;
+    }
+    article{
+        float: none;
+    }
+    article h1{
+        font-size: 30px;
+    }
+    article p{
+        font-size: 21px;
+    }
+    aside{
+        margin-top: 185%;
+    }
+    aside h2{
+        font-size: 20px;
+    }
+    aside h3{
+        font-size: 18px;
+    }
+    aside p{
+        font-size: 16px;
+    }
+    main{
+        padding-bottom: 147%;
+    }
+}
+@media screen and (max-width:658px){
+    aside{
+        margin-top: 200%;
+    }
+    main{
+        padding-bottom: 157%;
+    }
+}
+@media screen and (max-width:608px){
+    aside{
+        margin-top: 215%;
+    }
+    main{
+        padding-bottom: 173%;
+    }
+}
+@media screen and (max-width:578px){
+    aside{
+        margin-top: 235%;
+    }
+    main{
+        padding-bottom: 185%;
+    }
+}
+@media screen and (max-width:538px){
+    aside{
+        margin-top: 255%;
+    }
+    main{
+        padding-bottom: 200%;
+    }
+}
+@media screen and (max-width:506px){
+    aside{
+        margin-top: 275%;
+    }
+    main{
+        padding-bottom: 212%;
+    }
+}
+@media screen and (max-width:490px){
+    aside{
+        margin-top: 295%;
+    }
+    main{
+        padding-bottom: 217%;
+    }
+}
+@media screen and (max-width:477px){    
+    aside{
+        margin-top: 315%;
+    }
+    main{
+        padding-bottom: 230%;
+    }
+}
+@media screen and (max-width:453px){    
+    aside{
+        margin-top: 335%;
+    }
+    main{
+        padding-bottom: 240%;
+    }
+}
+@media screen and (max-width:433px){    
+    aside{
+        margin-top: 355%;
+    }
+    main{
+        padding-bottom: 250%;
+    }
+    #AUD{
+        width: 100%;
+    }
+}
+@media screen and (max-width:415px){    
+    aside{
+        margin-top: 375%;
+    }
+    main{
+        padding-bottom: 260%;
+    }
+}
+@media screen and (max-width:400px){    
+    aside{
+        margin-top: 395%;
+    }
+    main{
+        padding-bottom: 270%;
+    }
+}
+@media screen and (max-width:389px){    
+    aside{
+        margin-top: 415%;
+    }
+    main{
+        padding-bottom: 295%;
+    }
+}
+@media screen and (max-width:381px){    
+    aside{
+        margin-top: 435%;
+    }
+    main{
+        padding-bottom: 305%;
+    }
+}
+@media screen and (max-width:369px){    
+    aside{
+        margin-top: 455%;
+    }
+    main{
+        padding-bottom: 315%;
+    }
+}
+@media screen and (max-width:369px){    
+    aside{
+        margin-top: 475%;
+    }
+    main{
+        padding-bottom: 325%;
+    }
+}
+@media screen and (max-width:356px){    
+    aside{
+        margin-top: 495%;
+    }
+    main{
+        padding-bottom: 335%;
+    }
+}
+@media screen and (max-width:346px){    
+    aside{
+        margin-top: 515%;
+    }
+    main{
+        padding-bottom: 345%;
+    }
+}
+@media screen and (max-width:338px){    
+    aside{
+        margin-top: 535%;
+    }
+    main{
+        padding-bottom: 355%;
+    }
+}
+@media screen and (max-width:330px){    
+    aside{
+        margin-top: 555%;
+    }
+    main{
+        padding-bottom: 365%;
+    }
+}
+@media screen and (max-width:320px){
+    aside{
+        margin-top: 425% !important;
+    }
+    main{
+        padding-bottom: 350% !important;
+    }
+    h1{
+        font-size: 20px !important;
+    }
+    p{
+        font-size: 18px !important;
+    }
+    #audio{
+        font-size: 20px !important;
+    }
+}
